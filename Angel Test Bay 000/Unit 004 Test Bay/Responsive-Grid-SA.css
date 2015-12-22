@@ -1,0 +1,63 @@
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	width: 308px !important;
+	margin-top: -12px !important;
+}
+
+.top {
+    
+    margin-top: 200px;
+    
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+
+/*This will give a row that is one column One large column*/
+.span_3_of_3 { width: 100%; }
+/*This will give a column that is 2 columns in one*/
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 {
+
+/*Adjust the values in here to affect the grid*/
+
+	width: 100px;
+	height: 100px;
+	border-left: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+       border-bottom:  1px solid #ffffff;
+			 background-color: #03742d;
+			 color: white;
+			 text-align: center;
+			font-weight: bold;
+
+		 }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+/*@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}*/
+
+
+
+ #darkbackground {background-color: #03742d;}
+ #mediumbackground {background-color: #03742d;}
+ #lightbackground {background-color: #03742d;}

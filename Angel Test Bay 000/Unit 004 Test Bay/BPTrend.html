@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <title>Rotating Pictures</title>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="https://manweb.chrysler.com/s/wcm/SiteAssets/Design/BPTrendChart/ui/semantic.min.js" type="text/javascript">
+    </script>
+		<script src="https://manweb.chrysler.com/s/wcm/SiteAssets/Design/BPTrendChart/SI.js" type="text/javascript">
+    </script>
+    <link rel="stylesheet" href="https://manweb.chrysler.com/s/wcm/SiteAssets/Design/BPTrendChart/Grid.css" />
+    <link rel="stylesheet" href="https://manweb.chrysler.com/s/wcm/SiteAssets/Design/BPTrendChart/ui/semantic.css" />
+
+
+
+</head>
+
+
+  
+    <!-- Site content !-->
+
+
+        <div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    
+    <div class="section group">
+		<div class="col span_1_of_11">
+            <div>Assembly</div>
+        </div>
+      <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('BAP')">BAP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('BVP')">BVP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('CPKG')">CPKG</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('CPKPH')">CPKPH</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('JNAP')">JNAP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('SHAP')">SHAP</button>
+        </div>
+		 <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('TAC')">TAC</button>
+        </div>
+		 <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('WAP')">WAP</button>
+        </div>
+         <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('WTAP')">WTAP</button>
+        </div>
+		
+    </div>
+
+    <div class="section group">
+			<div class="col span_1_of_11">
+            <div>Powertrain</div>
+        </div>
+     <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('DEP')">DEP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('ECP')">ECP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('ITP1')">ITP1</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('ITP2')">ITP2</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('KCP')">KCP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('KTP')">KTP</button>
+        </div>
+		 <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('MEP')">MEP</button>
+        </div>
+		 <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('TEC')">TEC</button>
+        </div>
+		 <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('TMP')">TMP</button>
+        </div>
+		 <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('TTP')">TTP</button>
+        </div>
+    </div>
+	
+	
+    <div class="section group">
+			<div class="col span_1_of_11">
+            <div>Stamping</div>
+        </div>
+    <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('AD')">AD</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('METD')">METD</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('SSP')">SSP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('WSP')">WSP</button>
+        </div>
+       
+    </div>
+	
+	
+	
+    <div class="section group">
+			<div class="col span_1_of_11">
+            <div>Mexico</div>
+        </div>
+       <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('SAP')">SAP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('SEP')">SEP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('SSEP')">SSEP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('SVAP')">SVAP</button>
+        </div>
+        <div class="col span_1_of_11">
+            <button class="ui inverted orange Mainbutton button" onclick="changeImage('TAP')">TAP</button>
+        
+    </div>
+
+   
+   
+    </div>
+   
+          <div class="section group" style="margin-top: 40px;margin-left: 15%;">
+              <a href="#Safety"><div class="pillarnav SA">
+                 SA    
+                </div></a>
+                <a href="#Cost Deployment">
+                     <div class="pillarnav CD">
+                 CD  
+                </div></a>
+                <a href="#FI">
+                     <div class="pillarnav FI">
+                 FI   
+                </div></a>
+                <a href="#AM">
+                     <div class="pillarnav AM">
+                 AM
+                </div></a>
+                <a href="#WO">
+                     <div class="pillarnav WO">
+                 WO   
+                </div></a>
+                <a href="#PM">
+                     <div class="pillarnav PM">
+                 PM 
+                </div></a>
+                <a href="#QC">
+                       <div class="pillarnav QC">
+                 QC 
+                </div></a>
+                <a href="#LCS">
+                       <div class="pillarnav LCS">
+                 LCS
+                </div></a>
+                <a href="#EPM">
+                       <div class="pillarnav EPM">
+                 EPM
+                </div></a>
+                <a href="#EEM">
+                       <div class="pillarnav EEM">
+                 EEM
+                </div></a>
+                <a href="#PD">
+                       <div class="pillarnav PD">
+                 PD 
+                </div></a>
+                <a href="#ENV">
+                       <div class="pillarnav Env">
+                 Env
+                </div></a>
+                <a href="#E">
+                       <div class="pillarnav E">
+                 E
+                </div></a>
+                
+   
+   </div>
+  </nav>
+</div>
+
+
+
+
+    <!-- Onclick function will change the picture based on the variable in changeImage('varaiable') -->
+
+
+    
+
+
+
+   
+  
+<body>
+    <a id="Safety">
+    <div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Safety</h1>   
+        <img id="Image1" src="Snow.png">
+        <img id="Image2" src="Sky2.png">
+         <img id="Image3" src="Sky2.png">        
+        <img style="margin-top: 20px;" id="Image4" src="Sky2.png">
+        
+    </div></a>
+ 
+ <a id="Cost Deployment">
+    <div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Cost Deployment</h1>   
+        <img id="Image5" src="Snow.png">
+        <img id="Image6" src="Sky2.png">
+          <img id="Image7" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image8" src="Sky2.png">
+        
+    </div></a>
+   
+   <a id="FI">
+    <div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Focused Improvement</h1>   
+        <img id="Image9" src="Snow.png">
+        <img id="Image10" src="Sky2.png">
+          <img id="Image11" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image12" src="Sky2.png">
+        
+    </div></a>
+    
+    <a id="AM">
+    <div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Autonomous Maintenance </h1>   
+        <img id="Image13" src="Snow.png">
+        <img id="Image14" src="Sky2.png">
+          <img id="Image15" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image16" src="Sky2.png">
+        
+    </div></a>
+
+<a id="WO">
+<div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Workplace Organization</h1>   
+        <img id="Image17" src="Snow.png">
+        <img id="Image18" src="Sky2.png">
+          <img id="Image19" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image20" src="Sky2.png">
+        
+    </div></a>
+
+<a id="PM">
+<div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Professional Maintenance</h1>   
+        <img id="Image21" src="Snow.png">
+        <img id="Image22" src="Sky2.png">
+          <img id="Image23" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image24" src="Sky2.png">
+        
+    </div></a>
+    
+    <a id="QC">
+<div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Quality Control</h1>   
+        <img id="Image25" src="Snow.png">
+        <img id="Image26" src="Sky2.png">
+          <img id="Image27" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image28" src="Sky2.png">
+        
+    </div></a>
+    
+    
+    <a id="LCS">
+<div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Logistics</h1>   
+        <img id="Image29" src="Snow.png">
+        <img id="Image30" src="Sky2.png">
+          <img id="Image31" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image32" src="Sky2.png">
+        
+    </div></a>
+    
+    <a id="EEM">
+<div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Early Equipment Management</h1>   
+        <img id="Image33" src="Snow.png">
+        <img id="Image34" src="Sky2.png">
+          <img id="Image35" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image36" src="Sky2.png">
+        
+    </div></a>
+    
+        <a id="EPM">
+<div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Early Product Management</h1>   
+        <img id="Image37" src="Snow.png">
+        <img id="Image38" src="Sky2.png">
+          <img id="Image39" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image40" src="Sky2.png">
+        
+    </div></a>
+    
+        <a id="PD">
+<div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">People Development</h1>   
+        <img id="Image41" src="Snow.png">
+        <img id="Image42" src="Sky2.png">
+          <img id="Image43" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image44" src="Sky2.png">
+        
+    </div></a>
+    
+            <a id="ENV">
+<div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Enviroment</h1>   
+        <img id="Image45" src="Snow.png">
+        <img id="Image46" src="Sky2.png">
+          <img id="Image47" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image48" src="Sky2.png">
+        
+    </div></a>
+    
+            <a id="E">
+<div class="centerdiv" style="padding-top: 30px;">
+     <h1 class="Off-Color">Energy</h1>   
+        <img id="Image49" src="Snow.png">
+        <img id="Image50" src="Sky2.png">
+          <img id="Image51" src="Sky2.png">     
+        <img style="margin-top: 20px;" id="Image52" src="Sky2.png">
+        
+    </div></a>
+
+
+
+
+
+    <!-- <button class="ui inverted orange Mainbutton button" onclick="changeImage('Summer')" >Looking out for the others</button> -->
+		<p style="color: grey; text-align: center; padding-top: 30px;color:white;">
+			This site was created by Jonathan Jablonski using Semantic UI.
+		</p>
+
+
+
+ 
+
+</body>
+
+</html>
