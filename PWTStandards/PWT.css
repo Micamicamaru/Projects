@@ -1,0 +1,79 @@
+.left {
+
+
+float: left;
+width: 25%;
+margin-right: 20px;
+margin-left: 25%;
+margin-top: 20px;
+background-color: #e6ffdf;
+padding: 20px;
+}
+
+
+.right{
+float: right;
+width: 45%;
+
+}
+
+
+.standard {
+margin-top: 20px;
+width: 340px;
+height: 100px;
+background-color: rgb(255, 168, 177);
+
+text-align: center;
+}
+
+.approved{
+
+  width: 340px;
+  height: 100px;
+  background-color: #6ee6cc;
+
+text-align: center;
+}
+
+.documentation{
+  width: 340px;
+  height: 100px;
+  background-color: rgb(238, 165, 227);
+
+text-align: center;
+}
+
+.report{
+  width: 340px;
+  height: 100px;
+  background-color: rgb(255, 245, 217);
+
+text-align: center;
+}
+
+d {
+
+font-size: 50px;
+font-family: sans-serif;
+color: white;
+
+
+}
+
+
+
+.right div:hover {
+
+background-color: #ed7837;
+
+
+}
+
+#body {
+background-image: image(C:\Users\t6877jj\Desktop\Test Unit Area 001\PWTStandards\images\escheresque.png);
+background-attachment: fixed;
+margin: 0;
+padding: 0;
+
+}
